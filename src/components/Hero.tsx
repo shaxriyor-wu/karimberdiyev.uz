@@ -64,7 +64,7 @@ const Hero = () => {
               </span>
               <span className="inline-flex items-center gap-1.5 mono text-xs uppercase tracking-widest text-ink-400">
                 <MapPin className="w-3.5 h-3.5" />
-                Tashkent · UZ
+                Xorazm, Pitnak · UZ
               </span>
             </div>
 
