@@ -35,9 +35,6 @@ const Footer = () => {
           <div className="mono text-[10px] uppercase tracking-widest text-ink-500">
             {t.footer.rights}
           </div>
-          <div className="mono text-[10px] uppercase tracking-widest text-ink-500">
-            built with React · Tailwind · Framer Motion
-          </div>
         </div>
       </div>
     </footer>
