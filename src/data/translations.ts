@@ -271,7 +271,7 @@ export const translations: Record<Lang, Dict> = {
     },
     stack: {
       eyebrow: 'Stack',
-      headline: 'Har kuni ishlatadigan asboblarim.',
+      headline: "Mening stack'im.",
       sub: "Ishlaydigan oddiy texnologiyalarni tanlayman. Keyin uni tezlashtiraman.",
     },
     credentials: {
