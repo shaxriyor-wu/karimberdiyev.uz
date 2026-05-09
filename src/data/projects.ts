@@ -56,7 +56,7 @@ export const projects: Project[] = [
       ru: 'Full-stack платформа для управления футбольными командами, игроками и матчами. ReactJS, Django, Docker.',
     },
     tags: ['React', 'Django', 'SQLite', 'Docker'],
-    link: 'https://www.javaefootball.com',
+    link: 'https://javaefootball.com',
     cta: 'live',
     accent: 'sky',
   },
