@@ -16,7 +16,6 @@ export type Dict = {
     intro: string
     cta: { primary: string; secondary: string }
     stats: Array<{ value: string; label: string }>
-    availability: string
   }
   about: {
     eyebrow: string
@@ -90,10 +89,9 @@ export const translations: Record<Lang, Dict> = {
       cta: { primary: 'See my work', secondary: 'Get in touch' },
       stats: [
         { value: '1+', label: 'Years engineering' },
-        { value: '10+', label: 'Shipped projects' },
-        { value: '17', label: 'Years old' },
+        { value: '5+', label: 'Shipped projects' },
+        { value: '18', label: 'Years old' },
       ],
-      availability: 'Open to freelance & collaborations',
     },
     about: {
       eyebrow: 'About',
@@ -101,12 +99,11 @@ export const translations: Record<Lang, Dict> = {
       body: [
         "I'm a software engineer focused on backend systems, automation, and shipping products that solve real problems.",
         'My core stack is Python with Django and Aiogram, paired with PostgreSQL and SQLite. I care about clean architecture, performance, and pragmatic security.',
-        'I learn fast, ship faster, and like working in teams that move with intent.',
       ],
       education: {
         title: 'Education',
-        line1: 'School student — currently 17',
-        line2: 'No degree yet. I learn from problems, not slides.',
+        line1: 'TUIT, Cybersecurity — 1st-year student (distance learning), age 18',
+        line2: 'School graduate. I learn from problems, not slides.',
       },
       soft: {
         title: 'Soft skills',
@@ -139,10 +136,10 @@ export const translations: Record<Lang, Dict> = {
         {
           role: 'Freelance Software Engineer',
           company: 'Self-employed',
-          period: '2024 — Present',
+          period: '2025 — Present',
           mode: 'Remote',
           bullets: [
-            'Delivered 10+ client projects end-to-end, from requirements to production.',
+            'Delivered 5+ client projects end-to-end, from requirements to production.',
             'Built Telegram bots with Aiogram and Django REST backends.',
             'Implemented frontend integration, authentication, payments, and admin panels.',
             'Owned client communication, technical docs, and delivery timelines.',
@@ -183,7 +180,7 @@ export const translations: Record<Lang, Dict> = {
   },
   uz: {
     nav: {
-      home: 'Bosh',
+      home: 'Main',
       about: 'Men',
       work: 'Tajriba',
       projects: 'Loyihalar',
@@ -199,10 +196,9 @@ export const translations: Record<Lang, Dict> = {
       cta: { primary: "Ishlarimni ko'rish", secondary: "Bog'lanish" },
       stats: [
         { value: '1+', label: 'Yillik tajriba' },
-        { value: '10+', label: 'Yetkazilgan loyiha' },
-        { value: '17', label: 'Yosh' },
+        { value: '5+', label: 'Yetkazilgan loyiha' },
+        { value: '18', label: 'Yosh' },
       ],
-      availability: "Freelance va hamkorlikka ochiqman",
     },
     about: {
       eyebrow: 'Men haqimda',
@@ -210,12 +206,11 @@ export const translations: Record<Lang, Dict> = {
       body: [
         "Men backend tizimlar, avtomatlashtirish va real muammolarni hal qiluvchi mahsulotlarni yaratishga yo'naltirilgan dasturchiman.",
         'Asosiy stack: Python (Django, Aiogram), PostgreSQL va SQLite. Toza arxitektura, samaradorlik va amaliy xavfsizlikni qadrlayman.',
-        "Tez o'rganaman, tezroq yetkazaman va maqsadga yo'nalgan jamoalarni yaxshi ko'raman.",
       ],
       education: {
         title: "Ta'lim",
-        line1: "Maktab o'quvchisi — hozir 17 yoshda",
-        line2: "Universitet darajam yo'q. Slaydlardan emas, muammolardan o'rganaman.",
+        line1: "TATU, Kiberxavfsizlik — 1-kurs talabasi (masofaviy ta'lim), 18 yosh",
+        line2: "Maktabni tamomlaganman. Slaydlardan emas, muammolardan o'rganaman.",
       },
       soft: {
         title: 'Soft skills',
@@ -248,10 +243,10 @@ export const translations: Record<Lang, Dict> = {
         {
           role: 'Freelance Dasturchi',
           company: "O'z ishi",
-          period: '2024 — hozir',
+          period: '2025 — hozir',
           mode: 'Masofadan',
           bullets: [
-            "10+ mijoz loyihasini boshidan oxirigacha yetkazdim.",
+            "5+ mijoz loyihasini boshidan oxirigacha yetkazdim.",
             "Aiogram bilan Telegram botlari va Django REST backendlar qurdim.",
             "Frontend integratsiya, autentifikatsiya, to'lov va admin paneller joriy qildim.",
             "Mijoz bilan muloqot, texnik hujjat va deadlinelarni o'zim boshqardim.",
@@ -308,10 +303,9 @@ export const translations: Record<Lang, Dict> = {
       cta: { primary: 'Мои работы', secondary: 'Написать' },
       stats: [
         { value: '1+', label: 'Лет в инженерии' },
-        { value: '10+', label: 'Сданных проектов' },
-        { value: '17', label: 'Лет' },
+        { value: '5+', label: 'Сданных проектов' },
+        { value: '18', label: 'Лет' },
       ],
-      availability: 'Открыт к фрилансу и сотрудничеству',
     },
     about: {
       eyebrow: 'Обо мне',
@@ -319,12 +313,11 @@ export const translations: Record<Lang, Dict> = {
       body: [
         'Я инженер, сфокусированный на backend-системах, автоматизации и продуктах, решающих реальные задачи.',
         'Основной стек: Python (Django, Aiogram), PostgreSQL и SQLite. Ценю чистую архитектуру, производительность и прагматичную безопасность.',
-        'Быстро учусь, ещё быстрее поставляю и люблю команды, движущиеся с целью.',
       ],
       education: {
         title: 'Образование',
-        line1: 'Школьник — сейчас 17 лет',
-        line2: 'Диплома пока нет. Учусь у задач, а не у слайдов.',
+        line1: 'ТУИТ, Кибербезопасность — студент 1 курса (дистанционно), 18 лет',
+        line2: 'Выпускник школы. Учусь у задач, а не у слайдов.',
       },
       soft: {
         title: 'Soft skills',
@@ -357,10 +350,10 @@ export const translations: Record<Lang, Dict> = {
         {
           role: 'Фриланс инженер-программист',
           company: 'Самозанятый',
-          period: '2024 — настоящее',
+          period: '2025 — настоящее',
           mode: 'Удалённо',
           bullets: [
-            'Сдал 10+ клиентских проектов от требований до продакшена.',
+            'Сдал 5+ клиентских проектов от требований до продакшена.',
             'Telegram-боты на Aiogram и Django REST backend.',
             'Frontend-интеграция, аутентификация, платежи, админ-панели.',
             'Сам вёл коммуникацию с клиентами, документацию и сроки.',

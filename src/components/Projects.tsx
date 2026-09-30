@@ -2,16 +2,8 @@ import { motion } from 'framer-motion'
 import { ArrowUpRight, Github, MessageCircle } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 import Section from './Section'
-import { projects, projectCtaText, type Project } from '../data/projects'
+import { projects, projectCtaText } from '../data/projects'
 import { cx } from '../lib/utils'
-
-const accentMap: Record<Project['accent'], { glow: string; ring: string; text: string }> = {
-  lime: { glow: '#c4f154', ring: 'group-hover:border-lime/40', text: 'text-lime' },
-  amber: { glow: '#fbbf24', ring: 'group-hover:border-amber-400/40', text: 'text-amber-300' },
-  sky: { glow: '#38bdf8', ring: 'group-hover:border-sky-400/40', text: 'text-sky-300' },
-  rose: { glow: '#fb7185', ring: 'group-hover:border-rose-400/40', text: 'text-rose-300' },
-  violet: { glow: '#a78bfa', ring: 'group-hover:border-violet-400/40', text: 'text-violet-300' },
-}
 
 const sizeClass = {
   lg: 'col-span-12 lg:col-span-8 lg:row-span-2 min-h-[420px]',
@@ -32,7 +24,6 @@ const Projects = () => {
     >
       <div className="grid grid-cols-12 gap-3 sm:gap-4 auto-rows-min">
         {projects.map((p, idx) => {
-          const accent = accentMap[p.accent]
           const Icon = p.cta === 'code' ? Github : p.cta === 'bot' ? MessageCircle : ArrowUpRight
           return (
             <motion.a
@@ -45,24 +36,19 @@ const Projects = () => {
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.55, delay: (idx % 6) * 0.05 }}
               className={cx(
-                'group relative overflow-hidden rounded-3xl hairline bg-white/[0.02] p-5 sm:p-6 flex flex-col justify-between transition-all',
+                'group relative overflow-hidden rounded-lg hairline bg-white/[0.02] p-5 sm:p-6 flex flex-col justify-between transition-all',
                 'hover:bg-white/[0.04]',
-                accent.ring,
+                'hover:border-lime/40',
                 sizeClass[p.size],
               )}
             >
-              <div
-                className="absolute -top-24 -right-24 w-64 h-64 rounded-full opacity-0 group-hover:opacity-30 blur-3xl transition-opacity pointer-events-none"
-                style={{ background: `radial-gradient(circle, ${accent.glow} 0%, transparent 70%)` }}
-              />
-
               <div className="relative flex items-start justify-between gap-4">
                 <div className="flex items-center gap-2">
                   <span className="mono text-[10px] uppercase tracking-widest text-ink-500">
                     {p.number}
                   </span>
                   <span className="h-px w-6 bg-white/10" />
-                  <span className={cx('mono text-[10px] uppercase tracking-widest', accent.text)}>
+                  <span className={'mono text-[10px] uppercase tracking-widest text-lime'}>
                     {p.kind}
                   </span>
                 </div>
@@ -95,7 +81,7 @@ const Projects = () => {
                   {p.tags.slice(0, p.size === 'lg' ? 4 : 3).map((tag) => (
                     <span
                       key={tag}
-                      className="mono text-[10px] uppercase tracking-widest px-2 py-1 rounded-full bg-white/5 text-ink-300"
+                      className="mono text-[10px] uppercase tracking-widest px-2 py-1 rounded bg-white/5 text-ink-300"
                     >
                       {tag}
                     </span>
@@ -109,7 +95,7 @@ const Projects = () => {
                   </span>
                   <span
                     className={cx(
-                      'inline-flex items-center justify-center w-9 h-9 rounded-full hairline transition-colors',
+                      'inline-flex items-center justify-center w-9 h-9 rounded-md hairline transition-colors',
                       'group-hover:bg-lime group-hover:border-lime group-hover:text-zinc-950',
                     )}
                   >
@@ -126,7 +112,7 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.55 }}
-          className="col-span-12 lg:col-span-12 relative overflow-hidden rounded-3xl bg-lime text-zinc-950 p-8 sm:p-10 lg:p-12 mt-2"
+          className="col-span-12 lg:col-span-12 relative overflow-hidden rounded-lg hairline bg-ink-800 text-ink-100 p-8 sm:p-10 lg:p-12 mt-2"
         >
           <div className="grid grid-cols-12 gap-6 items-center">
             <div className="col-span-12 lg:col-span-8">
@@ -142,23 +128,16 @@ const Projects = () => {
                 href="https://t.me/shakh_wu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2 pl-5 pr-2 py-2.5 rounded-full bg-zinc-950 text-lime text-sm font-medium"
+                className="group inline-flex items-center gap-2 pl-5 pr-2 py-2.5 rounded-md bg-ink-100 text-ink-950 text-sm font-medium"
               >
                 {t.projects.discussCta}
-                <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-lime text-zinc-950 group-hover:rotate-45 transition-transform">
+                <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-ink-950 text-ink-100">
                   <ArrowUpRight className="w-4 h-4" />
                 </span>
               </a>
             </div>
           </div>
 
-          <div
-            className="absolute inset-0 opacity-20 pointer-events-none"
-            style={{
-              backgroundImage:
-                'radial-gradient(circle at 90% 10%, rgba(0,0,0,0.5) 0%, transparent 40%)',
-            }}
-          />
         </motion.div>
       </div>
     </Section>

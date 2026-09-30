@@ -22,7 +22,7 @@ const Stack = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.5, delay: idx * 0.06 }}
-            className="col-span-12 sm:col-span-6 lg:col-span-3 rounded-3xl hairline p-6 bg-white/[0.02] hover:bg-white/[0.04] transition-colors"
+            className="col-span-12 sm:col-span-6 lg:col-span-3 rounded-lg hairline p-6 bg-white/[0.02] hover:bg-white/[0.04] transition-colors"
           >
             <div className="flex items-center justify-between mb-5">
               <span className="eyebrow">{g.title[lang]}</span>
@@ -34,7 +34,7 @@ const Stack = () => {
               {g.items.map((item) => (
                 <span
                   key={item}
-                  className="px-3 py-1.5 rounded-full bg-white/[0.04] hairline text-sm text-ink-100 hover:border-lime/40 hover:text-lime transition-colors"
+                  className="px-3 py-1.5 rounded-md bg-white/[0.04] hairline text-sm text-ink-100 hover:border-lime/40 hover:text-lime transition-colors"
                 >
                   {item}
                 </span>
@@ -49,7 +49,7 @@ const Stack = () => {
           {[...stackMarquee, ...stackMarquee].map((item, i) => (
             <span
               key={`${item}-${i}`}
-              className="inline-flex items-center gap-3 shrink-0 px-5 py-3 rounded-full hairline bg-white/[0.04] mono text-xs sm:text-sm uppercase tracking-[0.18em] text-ink-100"
+              className="inline-flex items-center gap-3 shrink-0 px-5 py-3 rounded-md hairline bg-white/[0.04] mono text-xs sm:text-sm uppercase tracking-[0.18em] text-ink-100"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-lime" />
               {item}

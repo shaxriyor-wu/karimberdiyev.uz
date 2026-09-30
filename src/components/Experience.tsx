@@ -21,11 +21,11 @@ const Experience = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.6, delay: idx * 0.08 }}
-            className="group relative grid grid-cols-12 gap-4 lg:gap-8 p-6 sm:p-8 lg:p-10 rounded-3xl hairline bg-gradient-to-br from-white/[0.03] to-transparent hover:border-white/15 transition-colors"
+            className="group relative grid grid-cols-12 gap-4 lg:gap-8 p-6 sm:p-8 lg:p-10 rounded-lg hairline bg-gradient-to-br from-white/[0.03] to-transparent hover:border-white/15 transition-colors"
           >
             <div className="col-span-12 lg:col-span-3">
               <div className="flex items-center gap-2 mono text-xs uppercase tracking-widest text-lime mb-2">
-                <span className="w-2 h-2 rounded-full bg-lime animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-lime" />
                 {item.period}
               </div>
               <div className="flex items-center gap-2 text-ink-400 text-xs mono uppercase tracking-widest">

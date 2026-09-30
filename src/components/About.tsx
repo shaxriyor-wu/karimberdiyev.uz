@@ -72,7 +72,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="col-span-12 lg:col-span-5"
         >
-          <div className="relative rounded-3xl hairline overflow-hidden p-6 sm:p-8 bg-gradient-to-br from-white/[0.04] to-transparent h-full">
+          <div className="relative rounded-lg hairline overflow-hidden p-6 sm:p-8 bg-gradient-to-br from-white/[0.04] to-transparent h-full">
             <div className="flex items-center gap-2 mb-6">
               <Sparkles className="w-4 h-4 text-lime" />
               <span className="eyebrow">{t.about.soft.title}</span>
@@ -82,7 +82,7 @@ const About = () => {
               {t.about.soft.items.map((s, i) => (
                 <span
                   key={s}
-                  className="px-3 py-1.5 rounded-full hairline text-sm text-ink-200 hover:border-lime/40 hover:text-lime transition-colors"
+                  className="px-3 py-1.5 rounded-md hairline text-sm text-ink-200 hover:border-lime/40 hover:text-lime transition-colors"
                   style={{ animationDelay: `${i * 50}ms` }}
                 >
                   {s}
@@ -90,30 +90,6 @@ const About = () => {
               ))}
             </div>
 
-            <div className="mt-10 pt-8 border-t border-white/[0.06]">
-              <div className="grid grid-cols-3 gap-4">
-                {[
-                  { v: '∞', l: 'Curiosity' },
-                  { v: '24/7', l: 'Build mode' },
-                  { v: '0', l: 'Excuses' },
-                ].map((s) => (
-                  <div key={s.l}>
-                    <div className="display-text text-2xl text-ink-100">{s.v}</div>
-                    <div className="mono text-[10px] uppercase tracking-widest text-ink-400 mt-1">
-                      {s.l}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div
-              className="absolute -bottom-16 -right-16 w-48 h-48 rounded-full opacity-30 blur-3xl pointer-events-none"
-              style={{
-                background:
-                  'radial-gradient(circle, #c4f154 0%, transparent 70%)',
-              }}
-            />
           </div>
         </motion.div>
       </div>
@@ -130,7 +106,7 @@ const Card = ({
   title: string
   children: React.ReactNode
 }) => (
-  <div className="rounded-2xl hairline p-5 bg-white/[0.02] hover:bg-white/[0.04] transition-colors">
+  <div className="rounded-lg hairline p-5 bg-white/[0.02] hover:bg-white/[0.04] transition-colors">
     <div className="flex items-center gap-2 mb-3 text-lime">
       {icon}
       <span className="eyebrow text-lime">{title}</span>

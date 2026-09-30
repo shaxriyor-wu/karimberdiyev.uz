@@ -20,12 +20,12 @@ const Footer = () => {
 
           <button
             onClick={() => scrollToId('home')}
-            className="group inline-flex items-center gap-2 self-start md:self-auto px-4 py-2 rounded-full hairline text-ink-300 hover:text-lime hover:border-lime/30 transition-colors"
+            className="group inline-flex items-center gap-2 self-start md:self-auto px-4 py-2 rounded-md hairline text-ink-300 hover:text-lime hover:border-lime/30 transition-colors"
           >
             <span className="mono text-xs uppercase tracking-widest">
               {t.footer.backToTop}
             </span>
-            <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/[0.04] group-hover:bg-lime group-hover:text-zinc-950 transition-colors">
+            <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-white/[0.04] group-hover:bg-lime group-hover:text-zinc-950 transition-colors">
               <ArrowUp className="w-3.5 h-3.5" />
             </span>
           </button>

@@ -13,12 +13,8 @@ export const stackGroups: StackGroup[] = [
     items: ['PostgreSQL', 'SQLite'],
   },
   {
-    title: { en: 'Frontend', uz: 'Frontend', ru: 'Фронтенд' },
-    items: ['React', 'TypeScript', 'HTML', 'CSS', 'Tailwind'],
-  },
-  {
-    title: { en: 'Tools', uz: 'Asboblar', ru: 'Инструменты' },
-    items: ['Docker', 'Git', 'Linux', 'Vercel'],
+    title: { en: 'Tools', uz: 'Tools', ru: 'Инструменты' },
+    items: ['Docker', 'Git', 'Linux', 'Vercel', 'Cloudflare', 'Deployment'],
   },
 ]
 
@@ -28,11 +24,8 @@ export const stackMarquee = [
   'Aiogram',
   'PostgreSQL',
   'SQLite',
-  'React',
-  'TypeScript',
   'Docker',
   'Linux',
   'Git',
-  'Tailwind',
   'REST',
 ]

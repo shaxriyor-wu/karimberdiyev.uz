@@ -71,7 +71,7 @@ const Navigation = () => {
             onClick={() => handleClick('home')}
             className="group flex items-center gap-2"
           >
-            <span className="relative inline-flex items-center justify-center w-8 h-8 rounded-full bg-lime text-zinc-950 mono font-bold text-sm">
+            <span className="relative inline-flex items-center justify-center w-8 h-8 rounded-md bg-ink-100 text-ink-950 font-display font-semibold text-sm">
               SK
               <span className="absolute inset-0 rounded-full bg-lime blur-md opacity-0 group-hover:opacity-60 transition-opacity" />
             </span>
@@ -89,16 +89,16 @@ const Navigation = () => {
                 key={l.id}
                 onClick={() => handleClick(l.id)}
                 className={cx(
-                  'relative px-3 py-1.5 text-sm rounded-full transition-colors',
+                  'relative px-3 py-1.5 text-sm rounded-md transition-colors',
                   active === l.id
-                    ? 'text-zinc-950'
+                    ? 'text-ink-100'
                     : 'text-ink-300 hover:text-ink-100',
                 )}
               >
                 {active === l.id && (
                   <motion.span
                     layoutId="nav-active"
-                    className="absolute inset-0 rounded-full bg-lime"
+                    className="absolute inset-x-3 -bottom-0.5 h-px bg-lime"
                     transition={{ type: 'spring', stiffness: 400, damping: 32 }}
                   />
                 )}
@@ -113,7 +113,7 @@ const Navigation = () => {
               <button
                 onClick={() => setShowLang((s) => !s)}
                 onBlur={() => setTimeout(() => setShowLang(false), 120)}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full hairline mono text-xs uppercase tracking-widest text-ink-300 hover:text-ink-100"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-md hairline mono text-xs uppercase tracking-widest text-ink-300 hover:text-ink-100"
               >
                 <Globe className="w-3.5 h-3.5" />
                 {lang}
@@ -124,7 +124,7 @@ const Navigation = () => {
                     initial={{ opacity: 0, y: -6 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -6 }}
-                    className="absolute right-0 mt-2 w-32 rounded-2xl glass hairline overflow-hidden"
+                    className="absolute right-0 mt-2 w-32 rounded-lg glass hairline overflow-hidden"
                   >
                     {(['en', 'uz', 'ru'] as Lang[]).map((code) => (
                       <button
@@ -155,15 +155,15 @@ const Navigation = () => {
 
             <button
               onClick={() => handleClick('contact')}
-              className="hidden md:inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ink-100 text-ink-950 text-sm font-medium hover:bg-lime hover:text-zinc-950 transition-colors"
+              className="hidden md:inline-flex items-center gap-2 px-4 py-1.5 rounded-md bg-ink-100 text-ink-950 text-sm font-medium hover:bg-lime hover:text-zinc-950 transition-colors"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-lime md:bg-ink-950 animate-pulse" />
+              <span className="w-1.5 h-1.5 rounded-full bg-lime md:bg-ink-950" />
               {t.nav.contact}
             </button>
 
             <button
               onClick={() => setOpen((s) => !s)}
-              className="lg:hidden inline-flex items-center justify-center w-9 h-9 rounded-full hairline text-ink-100"
+              className="lg:hidden inline-flex items-center justify-center w-9 h-9 rounded-md hairline text-ink-100"
               aria-label="Toggle menu"
             >
               {open ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}

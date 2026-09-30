@@ -15,6 +15,8 @@
     --ink-300: 63 63 70;
     --ink-200: 39 39 42;
     --ink-100: 24 24 27;
+    --accent: 138 106 47;
+    --accent-soft: 168 134 70;
     --hairline: 0 0 0 / 0.08;
     --surface-soft: 0 0 0 / 0.04;
     --surface-softer: 0 0 0 / 0.02;
@@ -33,15 +35,23 @@
     --ink-300: 161 161 170;
     --ink-200: 212 212 216;
     --ink-100: 244 244 245;
-    --hairline: 255 255 255 / 0.07;
+    --accent: 201 168 106;
+    --accent-soft: 222 196 146;
+    --hairline: 255 255 255 / 0.09;
     --surface-soft: 255 255 255 / 0.04;
     --surface-softer: 255 255 255 / 0.02;
     --grid-line: 255 255 255 / 0.06;
   }
 
   html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
   }
 
   body {
@@ -54,12 +64,12 @@
   }
 
   ::selection {
-    background: #c4f154;
+    background: rgb(var(--accent));
     color: #0a0a0a;
   }
 
   *:focus-visible {
-    outline: 2px solid #c4f154;
+    outline: 2px solid rgb(var(--accent));
     outline-offset: 2px;
     border-radius: 4px;
   }
@@ -67,10 +77,11 @@
 
 @layer components {
   .display-text {
-    font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.04em;
-    line-height: 0.92;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.08;
+    font-variant-numeric: lining-nums;
   }
 
   .mono {
@@ -92,7 +103,7 @@
   }
 
   .accent-text {
-    color: #c4f154;
+    color: rgb(var(--accent));
   }
 
   .grain::before {
@@ -110,7 +121,7 @@
   }
 
   .eyebrow {
-    @apply mono text-xs uppercase tracking-[0.2em] text-ink-400;
+    @apply font-sans text-xs font-medium uppercase tracking-[0.18em] text-ink-400;
   }
 }
 

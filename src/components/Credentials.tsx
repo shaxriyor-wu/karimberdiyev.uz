@@ -30,10 +30,10 @@ const Credentials = () => {
                 {...(c.link
                   ? { href: c.link, target: '_blank', rel: 'noopener noreferrer' }
                   : {})}
-                className="group relative block h-full p-6 sm:p-8 rounded-3xl hairline bg-gradient-to-br from-white/[0.04] to-transparent hover:border-lime/30 transition-colors"
+                className="group relative block h-full p-6 sm:p-8 rounded-lg hairline bg-gradient-to-br from-white/[0.04] to-transparent hover:border-lime/30 transition-colors"
               >
                 <div className="flex items-start justify-between mb-8">
-                  <div className="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-lime/10 text-lime border border-lime/20">
+                  <div className="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-lime/10 text-lime border border-lime/20">
                     <Award className="w-5 h-5" />
                   </div>
                   <span className="mono text-xs uppercase tracking-widest text-ink-400">
@@ -49,7 +49,7 @@ const Credentials = () => {
                 <div className="mt-6 pt-6 border-t border-white/[0.06] flex items-center justify-between">
                   <span className="text-sm text-ink-200">{c.detail[lang]}</span>
                   {c.link && (
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full hairline text-ink-300 group-hover:bg-lime group-hover:border-lime group-hover:text-zinc-950 transition-colors">
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-md hairline text-ink-300 group-hover:bg-lime group-hover:border-lime group-hover:text-zinc-950 transition-colors">
                       <ExternalLink className="w-3.5 h-3.5" />
                     </span>
                   )}
