@@ -23,9 +23,16 @@ export const contacts: Contact[] = [
   },
   {
     id: 'github',
-    label: 'GitHub',
+    label: 'GitHub (Personal)',
     handle: 'github.com/shaxriyor-wu',
     href: 'https://github.com/shaxriyor-wu',
+    hue: '#ffffff',
+  },
+  {
+    id: 'github-tricorp',
+    label: 'GitHub (TriCorp)',
+    handle: 'github.com/tricorp-uz',
+    href: 'https://github.com/tricorp-uz',
     hue: '#ffffff',
   },
   {
