@@ -9,6 +9,10 @@ export const stackGroups: StackGroup[] = [
     items: ['Python', 'Django', 'Django REST', 'Aiogram', 'REST APIs'],
   },
   {
+    title: { en: 'Frontend', uz: 'Frontend', ru: 'Frontend' },
+    items: ['HTML/CSS', 'JavaScript Basics'],
+  },
+  {
     title: { en: 'Databases', uz: "Ma'lumotlar bazasi", ru: 'Базы данных' },
     items: ['PostgreSQL', 'SQLite'],
   },
@@ -24,6 +28,8 @@ export const stackMarquee = [
   'Aiogram',
   'PostgreSQL',
   'SQLite',
+  'HTML/CSS',
+  'JavaScript',
   'Docker',
   'Linux',
   'Git',
