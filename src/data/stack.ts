@@ -6,7 +6,7 @@ export type StackGroup = {
 export const stackGroups: StackGroup[] = [
   {
     title: { en: 'Backend', uz: 'Backend', ru: 'Backend' },
-    items: ['Python', 'Django', 'Django REST', 'Aiogram', 'REST APIs'],
+    items: ['Python', 'Django', 'Django REST', 'Flask', 'Aiogram', 'REST APIs'],
   },
   {
     title: { en: 'Frontend', uz: 'Frontend', ru: 'Frontend' },
@@ -14,23 +14,26 @@ export const stackGroups: StackGroup[] = [
   },
   {
     title: { en: 'Databases', uz: "Ma'lumotlar bazasi", ru: 'Базы данных' },
-    items: ['PostgreSQL', 'SQLite'],
+    items: ['PostgreSQL', 'SQLite', 'SQLAlchemy'],
   },
   {
     title: { en: 'Tools', uz: 'Tools', ru: 'Инструменты' },
-    items: ['Docker', 'Git', 'Linux', 'Vercel', 'Cloudflare', 'Deployment'],
+    items: ['Docker', 'n8n', 'Git', 'Linux', 'Vercel', 'Cloudflare', 'Deployment'],
   },
 ]
 
 export const stackMarquee = [
   'Python',
   'Django',
+  'Flask',
   'Aiogram',
   'PostgreSQL',
   'SQLite',
+  'SQLAlchemy',
   'HTML/CSS',
   'JavaScript',
   'Docker',
+  'n8n',
   'Linux',
   'Git',
   'REST',
