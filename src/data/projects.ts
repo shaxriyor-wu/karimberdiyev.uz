@@ -178,6 +178,27 @@ export const projects: Project[] = [
     cta: 'bot',
     accent: 'sky',
   },
+  {
+    id: 'iqtisodchi',
+    kind: 'bot',
+    size: 'md',
+    number: '09',
+    year: '2026',
+    titles: {
+      en: 'Iqtisodchi — AI expense bot',
+      uz: 'Iqtisodchi — AI xarajat boti',
+      ru: 'Iqtisodchi — AI-бот для расходов',
+    },
+    descriptions: {
+      en: 'Personal finance Telegram bot driven by a Claude tool-use agent: log expenses in plain text, set a budget period, and the daily limit adapts — overspend today, tomorrow shrinks. Topic guard (RAG), rate limiting, CSV export. aiogram, PostgreSQL + pgvector, Docker.',
+      uz: "Claude tool-use agenti boshqaradigan shaxsiy moliya boti: xarajatni oddiy matn bilan yozing, budget davrini belgilang — kunlik limit o'zi moslashadi: bugun ko'p sarflasangiz, ertangi limit kamayadi. Mavzu filtri (RAG), rate limit, CSV eksport. aiogram, PostgreSQL + pgvector, Docker.",
+      ru: 'Telegram-бот личных финансов на базе агента Claude (tool use): расходы обычным текстом, период бюджета, адаптивный дневной лимит — перерасход сегодня уменьшает лимит завтра. Фильтр тем (RAG), rate limit, экспорт CSV. aiogram, PostgreSQL + pgvector, Docker.',
+    },
+    tags: ['Claude API', 'RAG', 'Aiogram', 'PostgreSQL'],
+    link: 'https://github.com/shaxriyor-wu/iqtisodchi-bot',
+    cta: 'code',
+    accent: 'amber',
+  },
 ]
 
 export const projectCtaText = (cta: CtaKind, dict: Dict) => dict.projects.cta[cta]
