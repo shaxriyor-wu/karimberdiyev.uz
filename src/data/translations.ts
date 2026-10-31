@@ -90,7 +90,7 @@ export const translations: Record<Lang, Dict> = {
       stats: [
         { value: '1+', label: 'Years engineering' },
         { value: '5+', label: 'Shipped projects' },
-        { value: '18', label: 'Years old' },
+        { value: '19', label: 'Years old' },
       ],
     },
     about: {
@@ -102,7 +102,7 @@ export const translations: Record<Lang, Dict> = {
       ],
       education: {
         title: 'Education',
-        line1: 'TUIT, Cybersecurity — 1st-year student (distance learning), age 18',
+        line1: 'TUIT, Cybersecurity — 1st-year student (distance learning), age 19',
         line2: 'School graduate. I learn from problems, not slides.',
       },
       soft: {
@@ -197,7 +197,7 @@ export const translations: Record<Lang, Dict> = {
       stats: [
         { value: '1+', label: 'Yillik tajriba' },
         { value: '5+', label: 'Yetkazilgan loyiha' },
-        { value: '18', label: 'Yosh' },
+        { value: '19', label: 'Yosh' },
       ],
     },
     about: {
@@ -209,7 +209,7 @@ export const translations: Record<Lang, Dict> = {
       ],
       education: {
         title: "Ta'lim",
-        line1: "TATU, Kiberxavfsizlik — 1-kurs talabasi (masofaviy ta'lim), 18 yosh",
+        line1: "TATU, Kiberxavfsizlik — 1-kurs talabasi (masofaviy ta'lim), 19 yosh",
         line2: "Maktabni tamomlaganman. Slaydlardan emas, muammolardan o'rganaman.",
       },
       soft: {
@@ -304,7 +304,7 @@ export const translations: Record<Lang, Dict> = {
       stats: [
         { value: '1+', label: 'Лет в инженерии' },
         { value: '5+', label: 'Сданных проектов' },
-        { value: '18', label: 'Лет' },
+        { value: '19', label: 'Лет' },
       ],
     },
     about: {
@@ -316,7 +316,7 @@ export const translations: Record<Lang, Dict> = {
       ],
       education: {
         title: 'Образование',
-        line1: 'ТУИТ, Кибербезопасность — студент 1 курса (дистанционно), 18 лет',
+        line1: 'ТУИТ, Кибербезопасность — студент 1 курса (дистанционно), 19 лет',
         line2: 'Выпускник школы. Учусь у задач, а не у слайдов.',
       },
       soft: {
